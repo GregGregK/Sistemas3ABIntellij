@@ -1,6 +1,6 @@
 package br.com.sistema.controller;
 
-
+import br.com.sistema.model.Funcionario;
 import br.com.sistema.service.FuncionarioService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -12,10 +12,16 @@ public class FuncionarioController {
 
     @Autowired
     FuncionarioService funcionarioService;
+
     @GetMapping("/funcionario/list")
     public String list(Model model){
-        model.addAttribute("funcionarios", funcionarioService.findAll());
-        System.out.println(funcionarioService.findAll());
-        return  "/funcionario/list";
+        model.addAttribute("funcionarios",funcionarioService.findAll());
+        return "/funcionario/list";
+    }
+
+    @GetMapping("/funcionario/add")
+    public String add(Model model){
+        model.addAttribute("funcionario", new Funcionario());
+        return "funcionario/add";
     }
 }

@@ -5,14 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" th:href="@{/img/logo.png}" type="image/png">
+
     <title>3AB Sistemas Digitais</title>
-     <!--CSS-->
+    <!--CSS-->
     <link rel="stylesheet" th:href="@{/bootstrap-5.0.0/css/bootstrap.min.css}">
-    <link rel="stylesheet" th:href="@{/fontawesome-5.15.3/css/all.css/}">
+    <link rel="stylesheet" th:href="@{/fontawesome-5.15.3/css/all.css}">
     <link rel="stylesheet" th:href="@{/css/estilo.css}">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!--MENU-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-azul">
         <div class="container-fluid">
           <a class="navbar-brand" th:href="@{/}">3AB Sistemas Digitais</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,7 +23,8 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" th:href="@{/}">Principal</a>
+                <a class="nav-link active" aria-current="page" 
+                    th:href="@{/}">Principal</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" th:href="@{/funcionario/list}">Funcionários</a>
@@ -30,30 +33,51 @@
           </div>
         </div>
       </nav>
+      
+      <!--CONTEÚDO-->
+      <div class="container container-conteudo">
+        Bem-vindo(a) ao site da turma 3AB
 
-      <div class="container">
-          Bem-vindo(a) ao site da turma 3AB
+        <div class="card">
+          <h5 class="card-header">Produto A</h5>
+          <div class="card-body">
+            <h5 class="card-title">Nova linha de produtos A</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-dark">Go somewhere</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h5 class="card-header">Produto B</h5>
+          <div class="card-body">
+            <h5 class="card-title">Nova linha de produtos B</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-dark">Go somewhere</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h5 class="card-header">Produto C</h5>
+          <div class="card-body">
+            <h5 class="card-title">Nova linha de produtos C</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-dark">Go somewhere</a>
+          </div>
+        </div>
+
       </div>
 
-      <footer>
-          <ul class="list-group">
-              <li class="list-group-item">
-                  Empresa dos alunos 3ab
-              </li>
-              <li class="list-group-item">
-                  Telefone: (48)90028922
-              </li>
-              <li class="list-group-item">
-                  E-mail: gregori.monteiro@gmail.com
-              </li>
-          </ul>
+      <!--RODAPÉ-->
+      <footer class="footer-color">
+        <ul class="footer-ul">
+          <li>Empresa dos alunos da 3AB</li>
+          <li>Telefone: (48) 98891-1234 </li>
+          <li>E-mail: terceirao@gmail.com</li>
+        </ul>
       </footer>
 
-
-
-     <!--JS-->
-     <script th:src="@{/js/jquery-3.6.0.min.js}"></script>
-     <script th:src="@{/js/popper.min.js}"></script>
-     <script th:src="@{/bootstrap-5.0.0/js/bootstrap.min.js}"></script>
+    <!--JS-->
+    <script th:src="@{/js/jquery-3.6.0.min.js}"></script>
+    <script th:src="@{/js/popper.min.js}"></script>
+    <script th:src="@{/bootstrap-5.0.0/js/bootstrap.min.js}"></script>
 </body>
-</html>

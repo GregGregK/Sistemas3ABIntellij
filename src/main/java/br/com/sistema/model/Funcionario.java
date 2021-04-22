@@ -1,5 +1,6 @@
 package br.com.sistema.model;
 
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -7,26 +8,23 @@ import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
-@Entity(name = "funcionario")
+@Entity(name="funcionario")
 public class Funcionario {
 
-
-    //Define o id como chave primária
+    //Define o Id como chave primária
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    //Atributo para o nome, não nulo
+    //Atributo nome não núlo
     @Size(max = 80)
     @NotNull
-    private Long nome;
+    private String nome;
 
-
-    //Atributo para o e-mail, não nulo
+    //Atributo email não núlo
     @Size(max = 100)
     @NotNull
-    private Long email;
-
+    private String email;
 
     //Getters and Setters
     public Long getId() {
@@ -37,29 +35,28 @@ public class Funcionario {
         this.id = id;
     }
 
-    public Long getNome() {
+    public String getNome() {
         return nome;
     }
 
-    public void setNome(Long nome) {
+    public void setNome(String nome) {
         this.nome = nome;
     }
 
-    public Long getEmail() {
+    public String getEmail() {
         return email;
     }
 
-    public void setEmail(Long email) {
+    public void setEmail(String email) {
         this.email = email;
     }
-    //ToString para imprimir o objeto funcionario
+
+    //ToString para imprimir o objeto funcionário
 
     @Override
     public String toString() {
-        return "Funcionario{" +
-                "id=" + id +
-                ", nome=" + nome +
-                ", email=" + email +
-                '}';
+        return "Funcionario: " + id +
+                ", " + nome +
+                ", e-mail:" + email;
     }
 }

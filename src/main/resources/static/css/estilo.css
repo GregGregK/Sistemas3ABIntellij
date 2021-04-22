@@ -1,0 +1,60 @@
+footer{
+    text-align: center;
+}
+
+.bg-azul{
+    background-color: #c0f0ed !important;
+}
+
+.container-conteudo{
+    margin-top: 8px;
+}
+
+.card{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.footer-color{
+    background-color: black;
+    color: #fff;
+}
+
+.footer-ul{
+    list-style-type: none;
+    padding: 20px;
+    margin-bottom: 0;
+}
+
+.container-funcionario{
+    margin-top: 16px;
+    padding-top: 8px;
+    border: 1px solid #03524c ;
+    border-radius: 15px;
+}
+
+.td-controle{
+    width: 50px;
+}
+
+.container-header-funcionario{
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding: 24px;
+    background-color: #03524c ;
+    color: white;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.container-btn-novo{
+    width: 100%;
+    text-align: right;
+}
+
+.contanier-body-funcionario{
+    margin-top: 16px;
+    padding-top: 8px;
+    border: 1px solid #03524c ;
+    border-radius: 15px;
+}
